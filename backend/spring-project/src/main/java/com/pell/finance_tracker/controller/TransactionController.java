@@ -2,7 +2,7 @@ package com.pell.controller;
 
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import com.pell.model.Transactions;
+import com.pell.model.Transaction;
 import com.pell.repository.TransactionRepository;
 
 @RestController
@@ -13,7 +13,7 @@ public class TransactionController {
         this.transactionRepository = transactionRepository;
     }
     @GetMapping
-    public List<Transactions> getAllTransactions(){
+    public List<Transaction> getAllTransactions(){
         return transactionRepository.findAll();
     }
 }
