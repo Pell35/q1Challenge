@@ -6,7 +6,7 @@ import com.pell.model.Transaction;
 import com.pell.repository.TransactionRepository;
 
 @RestController
-@RequestMapping("/transactions")
+@RequestMapping("/transaction")
 public class TransactionController {
     private final TransactionRepository transactionRepository;
     public TransactionController(TransactionRepository transactionRepository) {

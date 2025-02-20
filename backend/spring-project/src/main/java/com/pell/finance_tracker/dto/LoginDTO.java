@@ -1,10 +1,13 @@
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class LoginDTO {
     @NotBlank
-    private String username username;
+    private String username;
 
     @NotBlank
     @Size(min=6)
-    private String password password;
+    private String password;
 
     public LoginDTO(){}
 
